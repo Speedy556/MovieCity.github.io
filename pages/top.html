@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pages/css/main.css">
+    <script src="https://kit.fontawesome.com/d6a9c2e72d.js" crossorigin="anonymous"></script>
+    <title>MovieCity - Report</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <p class="logo">MovieCity</p>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="tv series.html">TV series</a></li>
+                <li><a href="cartoons.html">Cartoons</a></li>
+                <li><a href="top.html">Report</a></li>
+                <li><a href="info.html">About</a></li>
+            </ul>
+        </nav>
+
+
+        <p class="menu cta">Menu</p>
+    </header>
+    <div class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay-content">
+            <a href="movies.html">Movies</a>
+            <a href="tv series.html">TV series</a>
+            <a href="cartoons.html">Cartoons</a>
+            <a href="top.html">Report</a>
+            <a href="info.html">About</a>
+        </div>
+    </div>
+
+
+    <div class="report">
+        <div class="container">
+            <form action="https://formspree.io/f/xdojdvdg" method="POST" id="my-form">
+                <p class="form-title">Report</p>
+
+                <div class="form-group">
+                    <label for="latsName">Name</label>
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group" id="messa">
+                    <label for="massage">Massage</label>
+                    <textarea name="massage" id="massage" cols="30" rows="10" class="mess"></textarea>
+                </div>
+                <div class="buton"></div>
+                <button type="submit" class="buton">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <span class="creator">Created by Andrei Craveț </span>
+            <a href="https://www.instagram.com/cravet556/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

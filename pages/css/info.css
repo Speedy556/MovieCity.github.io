@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --background: #ebebeb;
+    --text-color: #666666;
+    --font: "Roboto", sans-serif;
+    --fontOrigin: 16px;
+    --fontSmall: 10px;
+    --fontMedium: 14px;
+    --fontNormal: 16px;
+    --fontLarge: 22px;
+    --fontLight: 100;
+    --fontRegular: 400;
+    --speed: 0.65s;
+}
+
+body {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.836), rgba(27, 27, 27, 0.644)), url('../../BG/pexels-lucas-pezeta-2398354.jpg');
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.navbar {
+    position: relative;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24252a;
+    border-radius: 0px 0px 15px 15px;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+nav {
+    margin-top: -25px;
+}
+
+.nav-links a,
+.button,
+.overlay-content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 9px 25px;
+    background-color: #5caffc;
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.nav-links li {
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: color 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #000000;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+/* mobile mobile mobile */
+
+.menu {
+    display: none;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: 0.5s ease 0s;
+}
+
+.overlay.active {
+    width: 100%;
+}
+
+.overlay-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #0088a9;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+}
+
+.cta {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: #5caffc;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.homee {
+    margin-bottom: 30px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay .close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .nav-links,
+    .cta {
+        display: none;
+    }
+
+    .menu {
+        display: initial;
+    }
+    
+    body {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.836),  rgba(27, 27, 27, 0.644)), url(../../BG/pexels-ron-lach-9807293.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+}
+
+.title {
+    margin: 34px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: rgb(235, 235, 235);
+    font-size: 30px;
+    text-align: center;
+}
+
+.text {
+    margin: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: rgb(235, 235, 235);
+    font-size: 26px;
+    text-align: center;
+    margin: 100px 100px 100px 100px;
+}
+
+.text1 {
+    margin: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+    margin: 100px 100px 100px 100px;background: linear-gradient(to right, rgb(255, 0, 0) 20%, rgb(255, 0, 76) 40%, rgb(0, 119, 255) 60%, rgb(255, 80, 11) 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    animation: shine 5s linear infinite;
+  }
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
